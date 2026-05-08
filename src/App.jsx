@@ -87,7 +87,7 @@ function App() {
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-8">
             <a
               href="#project"
-              className="inline-flex items-center justify-center bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition cursor-pointer"
+              className="inline-flex items-center justify-center bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 active:scale-95 transition cursor-pointer"
             >
               View Projects
             </a>
