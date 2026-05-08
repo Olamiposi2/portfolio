@@ -82,12 +82,12 @@ function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-8">
-            <button className="bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition cursor-pointer">
+            <a className="bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition cursor-pointer">
               View Projects
-            </button>
-            <button className="ml-6 border border-[#1E3A8A] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1E3A8A] hover:text-black transition scale-105 transition duration-300 cursor-pointer">
+            </a>
+            <a className="ml-6 border border-[#1E3A8A] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1E3A8A] hover:text-black transition scale-105 transition duration-300 cursor-pointer">
               Contact Me
-            </button>
+            </a>
           </div>
         </div>
 
