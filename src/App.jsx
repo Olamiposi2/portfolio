@@ -62,7 +62,7 @@ function App() {
         {/* Button */}
         <a
           href=""
-          className="inline-flex items-center justify-center border border-cyan-400 px-5 py-2 rounded-full text-sm hover:bg-cyan-400 hover:text-black transition cursor-pointer"
+          className="inline-flex items-center justify-center border border-cyan-400 px-5 py-2 rounded-full text-sm transition-all duration-200 hover:bg-cyan-400 hover:text-black active:scale-95 active:bg-cyan-400 active:text-black active:opacity-80 transition cursor-pointer"
         >
           View Resume
         </a>
