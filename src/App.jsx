@@ -60,9 +60,12 @@ function App() {
         </ul>
 
         {/* Button */}
-        <button className="border border-cyan-400 px-5 py-2 rounded-full text-sm hover:bg-cyan-400 hover:text-black transition cursor-pointer">
+        <a
+          href=""
+          className="inline-flex items-center justify-center border border-cyan-400 px-5 py-2 rounded-full text-sm hover:bg-cyan-400 hover:text-black transition cursor-pointer"
+        >
           View Resume
-        </button>
+        </a>
       </nav>
       {/* Hero Section */}
       <section
@@ -82,10 +85,16 @@ function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 mt-8">
-            <a className="bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition cursor-pointer">
+            <a
+              href="#project"
+              className="inline-flex items-center justify-center bg-cyan-400 text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition cursor-pointer"
+            >
               View Projects
             </a>
-            <a className="ml-6 border border-[#1E3A8A] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1E3A8A] hover:text-black transition scale-105 transition duration-300 cursor-pointer">
+            <a
+              href="#contact"
+              className="inline-flex items-center justify-center ml-6 border border-[#1E3A8A] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1E3A8A] hover:text-black transition scale-105 transition duration-300 cursor-pointer"
+            >
               Contact Me
             </a>
           </div>
