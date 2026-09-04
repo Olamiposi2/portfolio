@@ -2,7 +2,8 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import logo from "./assets/icon.png";
-import profile from "./assets/thepriest.png";
+import profile from "./assets/thepriest1.png";
+import Filaimage from "./assets/F'NT.png";
 function App() {
   const [formData, setFormData] = useState({
     user_name: "",
@@ -61,7 +62,9 @@ function App() {
 
         {/* Button */}
         <a
-          href=""
+          href="/Agboola_Olanrewaju_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center justify-center border border-cyan-400 px-5 py-2 rounded-full text-sm transition-all duration-200 hover:bg-cyan-400 hover:text-black active:scale-95 active:bg-cyan-400 active:text-black active:opacity-80 transition cursor-pointer"
         >
           View Resume
@@ -79,7 +82,7 @@ function App() {
           </h2>
 
           <p className="text-gray-400 mt-6 text-base md:text-lg leading-7 md:leading-8">
-            Agboola Olamiposi | Frontend & Full-Stack Developer. Passionate
+            Agboola Olanrewaju | Frontend Developer. Passionate
             about building responsive, user-friendly and modern websites and
             bringing clarity to your ideas via code.
           </p>
@@ -115,7 +118,7 @@ function App() {
         <h2 className="text-3xl font-bold mb-8">Skills & Tech Stack</h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5">
-          {["React", "Next.js", "JavaScript", "Node.js", "Tailwind", "Git"].map(
+          {["React", "JavaScript", "Tailwind", "Git"].map(
             (skill) => (
               <div
                 key={skill}
@@ -136,14 +139,19 @@ function App() {
         <div className="bg-[#111827] border border-gray-800 rounded-2xl overflow-hidden hover:border-cyan-400transition">
           {/* Image */}
           <div className="h-40 bg-gray-700 flex items-center justify-center">
-            <p className="text-gray-400">Project Image</p>
+           <img
+            src={Filaimage}
+            alt="Website Preview"
+            className="w-auto h-80 md:w-80 md:h-80 object-contain"
+            object-contain
+          />
           </div>
 
           {/* Content */}
           <div className="p-5">
-            <h3 className="text-xl font-semibold">Project One</h3>
+            <h3 className="text-xl font-semibold mt-2">Fila Ni Tiwa</h3>
             <p className="text-gray-400 text-sm mt-2">
-              A modern web app built with React and Tailwind CSS.
+              A modern website built with React and Tailwind CSS. This website was built to meet the needs of the client to be able to showcase and allow ordering of products.
             </p>
 
             {/* Tech Stack */}
@@ -158,51 +166,12 @@ function App() {
 
             {/* Buttons */}
             <div className="flex gap-3 mt-5">
-              <button className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">
+              <a href="https://bit.ly/45tEhHX" className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">
                 Live Demo
-              </button>
-              <button className="border border-gray-600 px-4 py-2 rounded-full text-sm hover:border-cyan-400 cursor-pointer hover:-translate-y-1 transition">
-                Code
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Section2 */}
-      <section className="px-10 pb-20">
-        {/* Project Card 2 */}
-        <div className="bg-[#111827] border border-gray-800 rounded-2xl overflow-hidden hover:border-cyan-400transition">
-          {/* Image */}
-          <div className="h-40 bg-gray-700 flex items-center justify-center">
-            <p className="text-gray-400">Project Image</p>
-          </div>
-
-          {/* Content 2*/}
-          <div className="p-5">
-            <h3 className="text-xl font-semibold">Project Two</h3>
-            <p className="text-gray-400 text-sm mt-2">
-              A modern web app built with XXXX and XXXXX.
-            </p>
-
-            {/* Tech Stack 2 */}
-            <div className="flex flex-wrap gap-2 mt-4">
-              <span className="text-xs bg-gray-800 px-2 py-1 rounded">
-                XXXX
-              </span>
-              <span className="text-xs bg-gray-800 px-2 py-1 rounded">
-                XXXXX
-              </span>
-            </div>
-
-            {/* Buttons 2*/}
-            <div className="flex gap-3 mt-5">
-              <button className="bg-cyan-400 text-black px-4 py-2 rounded-full text-sm hover:scale-105 cursor-pointer">
-                Live Demo
-              </button>
-              <button className="border border-gray-600 px-4 py-2 rounded-full text-sm hover:border-cyan-400 cursor-pointer hover:-translate-y-1 transition">
-                Code
-              </button>
+              </a>
+              <a href="" className="border border-gray-600 px-4 py-2 rounded-full text-sm hover:border-cyan-400 cursor-pointer hover:-translate-y-1 transition hidden">
+               Code
+              </a>
             </div>
           </div>
         </div>
@@ -230,9 +199,9 @@ function App() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/Olamiposi2"
                 target="_blank"
-                className="flex items-center gap-3 hover:text-cyan-400 transition"
+                className="flex items-center gap-3 hover:text-cyan-400 transition hidden"
               >
                 <FaGithub />
                 <span>github.com</span>
@@ -241,7 +210,7 @@ function App() {
               <a
                 href="https://linkedin.com"
                 target="_blank"
-                className="flex items-center gap-3 hover:text-cyan-400 transition"
+                className="flex items-center gap-3 hover:text-cyan-400 transition hidden"
               >
                 <FaLinkedin />
                 <span>linkedin.com</span>
